@@ -1,59 +1,32 @@
-# FrontInventory
+Aplicación Single Page Application (SPA) desarrollada en **Angular** para el consumo de la API RESTfull de Categorías y Productos. Interfaz gráfica responsiva y moderna construida con Angular Material.
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 20.3.15.
+Este repositorio forma parte de la entrega para la materia de Desarrollo de Aplicaciones Distribuidas.
 
-## Development server
+## 🛠️ Tecnologías Utilizadas
+*   **Framework:** Angular
+*   **Diseño UI:** Angular Material (Tablas, Modales, Sidenav, SnackBar)
+*   **Lenguaje:** TypeScript, HTML5, CSS3
 
-To start a local development server, run:
+## ✨ Funcionalidades Implementadas
+*   **Dashboard interactivo:** Menú lateral (Sidenav) y barra de herramientas responsivos.
+*   **Consumo de API:** Integración completa con el backend en Spring Boot para las operaciones CRUD.
+*   **Gestión de Categorías:** Listado, creación, edición y eliminación.
+*   **Gestión de Productos:** Listado con paginación, creación, edición (incluyendo interfaz para carga de imágenes) y eliminación.
+*   **Filtros en tiempo real:** Buscador integrado en las tablas para encontrar registros al instante.
 
-```bash
-ng serve
-```
+## 🚀 Instalación y Ejecución
+1. Clonar este repositorio:
+   ```bash
+   git clone [TU_ENLACE_DE_GITHUB_FRONTEND]
+Instalar las dependencias de Node:
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+Bash
+npm install
 
-## Code scaffolding
+3. Iniciar el servidor de desarrollo:
+   ```bash
+   ng serve -o
+   
+La aplicación se abrirá automáticamente en http://localhost:4200/.
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
-
-```bash
-ng generate component component-name
-```
-
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
-
-```bash
-ng generate --help
-```
-
-## Building
-
-To build the project run:
-
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+Desarrollador: Omar Lopez Ciriaco
