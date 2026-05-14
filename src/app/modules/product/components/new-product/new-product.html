@@ -4,17 +4,6 @@
   <form [formGroup]="productForm">
     <div style="display: flex; flex-direction: column; padding: 10px 0;">
 
-      <!-- Botón para subir Foto (Diseño Material) -->
-      <div style="margin-bottom: 20px; display: flex; align-items: center;">
-        <button mat-stroked-button color="primary" type="button" (click)="fileInput.click()">
-          <mat-icon>image</mat-icon> Seleccionar Foto
-        </button>
-        <!-- Input real oculto -->
-        <input hidden (change)="onFileSelected($event)" #fileInput type="file" accept="image/*">
-        <!-- Mostramos el nombre de la foto elegida -->
-        <span style="margin-left: 10px; color: gray;">{{ imageName || 'Ningún archivo seleccionado' }}</span>
-      </div>
-
       <!-- Nombre -->
       <mat-form-field appearance="fill" style="width: 100%;">
         <mat-label>Nombre del Producto</mat-label>
@@ -42,6 +31,17 @@
           </mat-option>
         </mat-select>
       </mat-form-field>
+
+      <!-- Botón para subir Foto (Diseño Material) -->
+      <div style="margin-bottom: 20px; display: flex; align-items: center;">
+        <button mat-stroked-button color="primary" type="button" (click)="fileInput.click()">
+          <mat-icon>image</mat-icon> Seleccionar Foto
+        </button>
+        <!-- Input real oculto -->
+        <input hidden (change)="onFileSelected($event)" #fileInput type="file" accept="image/*">
+        <!-- Mostramos el nombre de la foto elegida -->
+        <span style="margin-left: 10px; color: gray;">{{ imageName || 'Ningún archivo seleccionado' }}</span>
+      </div>
 
     </div>
   </form>
