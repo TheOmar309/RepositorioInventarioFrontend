@@ -21,6 +21,12 @@ export const DASHBOARD_ROUTES: Routes = [
         loadChildren: () =>
           import('../category/category-module').then((m) => m.CategoryModule),
       },
+      // --- AGREGA ESTE BLOQUE NUEVO PARA PRODUCTOS ---
+      {
+        path: 'product',
+        loadComponent: () =>
+          import('../product/components/product/product').then((m) => m.ProductComponent),
+      }
     ],
   },
 ];

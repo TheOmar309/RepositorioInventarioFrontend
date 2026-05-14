@@ -1,0 +1,26 @@
+.welcome-container {
+  /* Usamos vh para que ocupe el alto de la pantalla menos el toolbar */
+  height: calc(100vh - 64px);
+  width: 100%;
+
+  /* Reemplaza con la ruta real de tu imagen */
+  background-image: url('/twice2.png');
+
+  /* Ajustes de posición */
+  background-size: cover;      /* Cubre todo el espacio */
+  background-position: center; /* Centra a las integrantes */
+  background-repeat: no-repeat;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: -20px; /* Anula el padding del contenedor padre si es necesario */
+}
+
+.content {
+  text-align: center;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5); /* Fondo oscuro semitransparente para leer el texto */
+  padding: 20px;
+  border-radius: 10px;
+}

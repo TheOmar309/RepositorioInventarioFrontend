@@ -1,12 +1,31 @@
+/* Alineación perfecta para todos los items del menú */
+mat-nav-list a[mat-list-item] div {
+  display: flex;
+  align-items: center;
+  padding: 0 8px; /* Espaciado interno para que no pegue al borde */
+}
+
+/* Espacio entre icono y texto */
+mat-nav-list mat-icon {
+  margin-right: 16px;
+  color: rgba(0, 0, 0, 0.54); /* Color gris estándar de Material para iconos */
+}
+
+/* Efecto cuando pasas el mouse o estás en la ruta activa */
+.active-link {
+  background-color: rgba(0, 0, 0, 0.04);
+  border-left: 4px solid #3f51b5; /* Una línea azul a la izquierda para resaltar */
+}
 .dashboard-container {
   display: flex;
+  flex-direction: column;
   position: absolute;
   top: 0;
+  bottom: 0;
   left: 0;
   right: 0;
-  bottom: 0;
 }
-h1.app-name {
-  margin-left: 16px;
 
+.sidenav-container {
+  flex: 1; /* Esto obliga al contenedor a ocupar todo el espacio restante bajo la toolbar */
 }
